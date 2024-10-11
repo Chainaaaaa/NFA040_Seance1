@@ -9,19 +9,73 @@
             font-family: Arial, sans-serif;
             background-color: #f0f8ff;
             text-align: center;
-            margin-top: 20%;
+            margin: 0;
+            padding: 0;
         }
         h1 {
-            color: #2e8b57;
+            color: #ff69b4; /* Bienvenue en rose */
+            margin-top: 50px;
         }
         p {
             color: #333;
             font-size: 1.2em;
+        }
+        .container {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .passions {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .passion-item {
+            text-align: center;
+            width: 30%;
+        }
+        .passion-item img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .passion-item h2 {
+            color: #2e8b57;
+            font-size: 1.5em;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
     <h1>Bienvenue sur mon site !</h1>
     <p>Je m'appelle Chaina.</p>
+
+    <div class="container">
+        <h2>Mes passions</h2>
+        <div class="passions">
+            <!-- Jeux vidéos -->
+            <div class="passion-item">
+                <img src="https://via.placeholder.com/300x200?text=Jeux+Vid%C3%A9os" alt="Jeux vidéos">
+                <h2>Jeux Vidéos</h2>
+            </div>
+
+            <!-- Shopping -->
+            <div class="passion-item">
+                <img src="https://via.placeholder.com/300x200?text=Shopping" alt="Shopping">
+                <h2>Shopping</h2>
+            </div>
+
+            <!-- Voyage -->
+            <div class="passion-item">
+                <img src="https://via.placeholder.com/300x200?text=Voyage" alt="Voyage">
+                <h2>Voyage</h2>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
